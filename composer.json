@@ -1,0 +1,46 @@
+{
+    "name": "tiix/calculator",
+    "type": "library",
+    "description": "Simple calculator",
+    "keywords": [
+        "tiix",
+        "calculator"
+    ],
+    "homepage": "https://github.com/timurbakarov/calculator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Timur Bakarov",
+            "email": "tbakarov@gmail.com",
+            "homepage": "http://timurbakarov.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~5.5|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3",
+        "codeception/codeception": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tiix\\Calculator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tiix\\Calculator\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
