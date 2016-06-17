@@ -6,4 +6,5 @@ php:
   - '7.0'
   - hhvm
   - nightly
-script: vendor/bin/codecept run
+install: composer install
+script: ./vendor/bin/codecept run
